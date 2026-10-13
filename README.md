@@ -61,9 +61,10 @@ On GitHub, the workflow in `.github/workflows/update-data.yml` keeps `js/data.js
 GitHub starts scheduled jobs late when it is busy (sometimes by hours), so results can take a while to
 appear. To update right away: **Actions → Update ACB data → Run workflow**.
 
-Notes: GitHub pauses scheduled workflows in repositories with no activity for 60 days (e.g. in the
-summer off-season); re-enable it from the Actions tab. The workflow has not run on GitHub yet: if acb.com
-refuses requests from GitHub's servers, run `python update_data.py` on your own computer and push.
+Live site: https://tomlebedev-cloud.github.io/acb/
+
+Note: GitHub pauses scheduled workflows in repositories with no activity for 60 days (e.g. in the
+summer off-season). If that happens, re-enable it from the Actions tab.
 
 ## How predictions work
 
