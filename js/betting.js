@@ -595,19 +595,19 @@ pages.bets = params => {
         margin (typically 5–8%) has to be beaten first. "Value" here means the model disagrees with the bookmaker;
         it is not a guarantee. The model does not know who is injured: tick injured key players
         yourself from the news before betting. On past seasons, knowing the line-ups improved the model only a
-        little (winners 66.6% → 66.8%): bookmakers react to injury news fast, so the edge is in being quicker.
+        little, and not in every season: bookmakers react to injury news fast, so the edge is in being quicker.
         Over a few rounds results are mostly luck; keep the log below to see whether it works over 100+ bets.</p>
-      <p>Totals (over/under) are the weakest part: on past seasons the model missed the total by 13.3 points on
-        average, barely better than just using the league average (13.9). Winner and handicap bets rest on firmer ground.</p>
+      <p>Totals (over/under) are the weakest part: on past seasons the model missed the total by 13.5 points on
+        average. Winner and handicap bets rest on firmer ground.</p>
       <p>Bet only money you can afford to lose. Help in Lithuania: Lošimų priežiūros tarnyba, tel. 8 800 222 99 (free).</p>`,
       `<p>Modelis atspėja maždaug 70 % nugalėtojų, bet lažybų bendrovių kainos dažniausiai bent tokios pat geros, o jų
         maržą (paprastai 5–8 %) pirmiausia reikia įveikti. „Vertė“ čia reiškia, kad modelis nesutinka su lažybų bendrove;
         tai ne garantija. Modelis nežino, kas traumuotas: traumuotus pagrindinius žaidėjus
         pažymėkite patys pagal naujienas. Praėjusiuose sezonuose žinomos sudėtys modelį pagerino tik šiek tiek
-        (nugalėtojai 66,6 % → 66,8 %): lažybų bendrovės į traumų naujienas reaguoja greitai, todėl pranašumas yra greitume.
+        ir ne kiekvieną sezoną: lažybų bendrovės į traumų naujienas reaguoja greitai, todėl pranašumas yra greitume.
         Per kelis turus rezultatus daugiausia lemia sėkmė; veskite žurnalą ir vertinkite po 100+ statymų.</p>
       <p>Totalai (daugiau/mažiau) yra silpniausia vieta: praėjusiuose sezonuose modelis taškų sumą prašaudavo vidutiniškai
-        13,3 taško, vos geriau nei tiesiog lygos vidurkis (13,9). Nugalėtojo ir foros statymai remiasi tvirtesniu pagrindu.</p>
+        13,5 taško. Nugalėtojo ir foros statymai remiasi tvirtesniu pagrindu.</p>
       <p>Statykite tik tiek, kiek galite sau leisti prarasti. Pagalba: Lošimų priežiūros tarnyba, tel. 8 800 222 99 (nemokamai).</p>`)}
     </div></div>`;
 };

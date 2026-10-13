@@ -529,7 +529,7 @@ function playerPage(code) {
   return `
     <p><a href="#team/${t.id}">← ${esc(t.name)}</a></p>
     <h1 class="team-title">${badge(t, "lg")} ${esc(p.name)}</h1>
-    <p class="muted">${p.num ? `#${esc(p.num)} · ` : ""}${esc(p.pos)}${p.pos ? " · " : ""}${esc(p.nat)} · ${teamLink(t.id, "sm").replace('class="team-cell"', 'class="team-cell inline"')}
+    <p class="muted">${p.num ? `#${esc(p.num)} · ` : ""}${esc(p.pos)}${p.pos ? " · " : ""}${p.nat ? `${esc(p.nat)} · ` : ""}${teamLink(t.id, "sm").replace('class="team-cell"', 'class="team-cell inline"')}
       ${entries.length > 1 ? ` · ${L("also played for", "taip pat žaidė už")} ${entries.filter(e => e !== p).map(e => esc(teamById[e.team].name)).join(", ")}` : ""}</p>
     ${p.gp ? `<div class="card">
       <h2>${L("Season averages", "Sezono vidurkiai")} <span class="muted">· ${p.gp} ${L("games", "rungt.")}</span></h2>
