@@ -39,8 +39,10 @@ LOGISTIC_SCALE = 4.8          # margin -> probability: p = 1 / (1 + exp(-margin 
 DEFAULT_AVERAGE = 84.0        # league points per team per game when nothing is known
 
 # How far real results land from the prediction (python backtest.py --spread, 978 games 2023-24 to 2025-26).
-# The betting page simulates games with these: final margin and total ~ normal(prediction + bias, sd).
-SIM = {"sdMargin": 12.1, "marginBias": 1.2, "sdTotal": 17.2, "totalBias": 2.0, "corr": 0.0}
+# The betting page simulates games with these: final margin ~ normal(slope * predicted margin + bias, sd),
+# total ~ normal(prediction + bias, sd). Real margins run wider than predicted ones (the ratings are shrunk
+# toward average), so the slope is above 1; without it the page underrated favourites.
+SIM = {"sdMargin": 12.0, "marginBias": 0.4, "marginSlope": 1.33, "sdTotal": 17.2, "totalBias": 2.0, "corr": 0.0}
 
 # Missing players (python backtest.py --absences). A team's key players are its 3 regulars (played at
 # least half its games) with the highest PIR per game; early in the season that leans on last season's
